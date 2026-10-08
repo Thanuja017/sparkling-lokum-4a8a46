@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Tools Finder</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header class="navbar">
+
+<div class="logo-box">
+
+<div class="logo-icon">AI</div>
+<h1 class="logo-text">AI Tools Finder</h1>
+
+</div>
+
+<input
+type="text"
+id="searchBar"
+placeholder="Search AI tools..."
+>
+
+</header>
+
+
+<section class="filters">
+
+<div class="filter-group">
+
+<h3>Categories</h3>
+
+<div class="categories">
+
+<button class="filter-btn active" onclick="filterCategory('All',this)">All</button>
+<button class="filter-btn" onclick="filterCategory('Writing',this)">Writing</button>
+<button class="filter-btn" onclick="filterCategory('Image',this)">Image</button>
+<button class="filter-btn" onclick="filterCategory('Code',this)">Code</button>
+<button class="filter-btn" onclick="filterCategory('Video',this)">Video</button>
+<button class="filter-btn" onclick="filterCategory('Audio',this)">Audio</button>
+<button class="filter-btn" onclick="filterCategory('Productivity',this)">Productivity</button>
+<button class="filter-btn" onclick="filterCategory('Chatbot',this)">Chatbot</button>
+
+</div>
+
+</div>
+
+
+<div class="filter-group">
+
+<h3>Pricing</h3>
+
+<div class="pricing">
+
+<button class="filter-btn active" onclick="filterPrice('All',this)">All</button>
+<button class="filter-btn" onclick="filterPrice('Free',this)">Free</button>
+<button class="filter-btn" onclick="filterPrice('Premium',this)">Premium</button>
+<button class="filter-btn" onclick="filterPrice('Paid',this)">Paid</button>
+
+</div>
+
+</div>
+
+<div class="reset-area">
+
+<button class="reset-btn" onclick="resetFilters()">Reset Filters</button>
+
+<p id="toolCount"></p>
+
+</div>
+
+</section>
+
+
+<section id="toolsContainer"></section>
+
+<div id="pagination"></div>
+
+<script src="script.js"></script>
+
+</body>
+<div class="main-layout">
+
+
+<!-- your existing filters section here -->
+
+</aside>
+
+<main class="content">
+
+<section id="toolsContainer"></section>
+
+<div id="pagination"></div>
+
+</main>
+
+</div>
+</html>
